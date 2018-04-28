@@ -37,14 +37,19 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+        
         'urlManager' => [
+			'class' => 'common\core\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+			//'enableStrictParsing' => true,
             'rules' => [
+				//'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				//'<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
             ],
+			'suffix' => '.jsp'
         ],
-        */
+        
     ],
     'params' => $params,
 ];
